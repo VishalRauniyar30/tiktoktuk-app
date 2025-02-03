@@ -10,7 +10,7 @@ import { IoMdAdd } from 'react-icons/io'
 import useAuthStore from '@/store/authStore'
 import { IUser } from '@/type'
 import { createOrGetUser } from '@/utils'
-import Logo from '@/utils/tiktik-logo.png'
+import Logo from '@/utils/clipzy.webp'
 import Logo2 from '@/utils/best.jpg'
 
 const Navbar = () => {
@@ -37,13 +37,13 @@ const Navbar = () => {
     return (
         <div className='w-full flex justify-between items-center border-b-2 border-gray-200 py-2 px-4'> 
             <Link href='/'>
-                <div className='w-[100px] md:w-[130px] md:h-[30px] h-[38px]'>
+                <div className='w-[100px] md:w-[50px] md:h-[50px] h-[38px]'>
                     <Image 
                         src={Logo}
-                        className='cursor-pointer'
+                        className='cursor-pointer rounded-full'
                         alt='logo'
-                        width={130}
-                        height={130}
+                        width={50}
+                        height={50}
                     />
                 </div>
             </Link>
